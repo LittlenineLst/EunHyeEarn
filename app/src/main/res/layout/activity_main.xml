@@ -1,0 +1,93 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <VideoView
+        android:id="@+id/backgroundVideo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/kim1Button"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="93dp"
+                android:layout_marginEnd="2dp"
+                android:contentDescription="B1"
+                android:alpha="0.7"
+                android:src="@drawable/kim1" />
+
+
+            <ImageButton
+                android:id="@+id/aboutButton"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="50dp"
+                android:layout_toEndOf="@id/kim1Button"
+                android:contentDescription="About Button"
+                android:src="@drawable/dprkslim" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/kim2Button"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="8dp"
+                android:contentDescription="B2"
+                android:alpha="0.8"
+                android:src="@drawable/kim2" />
+
+            <ImageView
+                android:id="@+id/kim3Button"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="8dp"
+                android:contentDescription="B3"
+                android:alpha="0.9"
+                android:src="@drawable/kim3" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/thankfulnessTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="恩情已还：0"
+            android:textSize="18sp"
+            android:textColor="#FF0000"
+            android:layout_marginTop="16dp"
+            android:gravity="center" />
+
+        <ImageView
+            android:id="@+id/kim4Button"
+            android:layout_width="50dp"
+            android:layout_height="35dp"
+            android:layout_margin="8dp"
+            android:contentDescription="Kim4"
+            android:src="@drawable/sk" />
+    </LinearLayout>
+
+</FrameLayout>
